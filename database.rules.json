@@ -1,0 +1,22 @@
+{
+  "rules": {
+    "users": {
+      "$uid":{
+        ".read": "auth!==null && $uid === auth.uid",
+        ".write": "auth!==null && $uid === auth.uid"
+      }
+    },
+    "art":{
+       ".read":"true",
+       ".write":"true"
+    },
+    "music":{
+       ".read":"true",
+       ".write":"true"
+    },
+    "mood":{
+       ".read":"true",
+       ".write":"true"
+    }
+  }
+}
